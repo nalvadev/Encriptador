@@ -1,0 +1,140 @@
+
+
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primarycolor: #9bacf0;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo{
+    margin:20px;
+    position: absolute;
+}
+
+.container{
+    background-color: var(--primarycolor);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    min-height: 95vh;
+    height: auto;
+    justify-content: center;
+}
+
+.sub-container1{
+    flex:1;
+    display: flex;
+    flex-wrap: wrap;
+    padding:40px;
+    min-width: 400px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.text{
+    resize: none;
+    font-size: 32px;
+    border: none;
+    border-radius: 10px;
+    max-width: 30vw;
+    outline: none;  
+    background: none;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sub-container2{
+   flex:2;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   border-radius: 15px;
+   max-width: 30vw;
+   min-width: 400px;
+   background-color: whitesmoke;
+}
+
+.picture{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    transform: scale(0.8);
+
+}
+
+
+
+.text2{
+    resize: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.warning{
+    font-weight: bold;
+    font-size: small;
+}
+
+
+
+.button{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(209, 208, 240);
+    padding: 10px;
+    width: 150px;
+    margin:5px
+}
+
+button:hover{
+    background-color: #0A3871;
+    color: whitesmoke;
+    
+}
+
+.footer{
+    
+    height: 5vh;
+    text-align: center;
+    
+    background-color: #9bacf0;
+}
+
+#notfound{
+    padding: 20px;
+    text-align: center;
+}
+
+#found{
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-items: space-around;
+}
+
+#cartelfound {
+    display: flex;
+    flex-wrap: wrap;
+    resize: none;
+    font-size: 25px;
+    border: none;
+    outline: none;  
+    background: none;
+    overflow: hidden;
+    text-align: center;
+}
+

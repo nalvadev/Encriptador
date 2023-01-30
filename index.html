@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Encripter</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" alt="logo" src="/assets/img/logo.png" />
+  </header>
+  <div class="container">
+    <div class="sub-container1">
+
+      <h1>Encripter</h1>
+      <textarea class="text" id="text" placeholder="Ingrese el texto aquí" autofocus autocomplete="off"></textarea>
+
+
+      <div class="buttons">
+        <button class="button" type="button" id="encript" onclick="encriptar()">Encriptar</button>
+        <button class="button" type="button" id="desencript" onclick="desencriptar()">Desencriptar</button>
+        <p class="warning"> &#9888; Solo letras minúsculas y sin acentos</p>
+      </div>
+
+    </div>
+    <div class="sub-container2">
+      <div id="notfound">
+        <img src="/assets/img/looking.svg" alt="picture" />
+        <h5 id="cartelnotfound">Ningun mensaje fue encontrado</h5>
+      </div>
+
+      <div id="found" style="display: none">
+        <textarea id="cartelfound" cols="20" rows="15"></textarea>
+        <button class="button" id="copy" type="button" name="copy" onclick="copiar()">Copiar</button>
+      </div>
+
+    </div>
+  </div>
+  <footer class="footer">
+    <h5> Iternova &#174 2023 for Alura -- Todos los derechos reservados</h5>
+  </footer>
+  <script src="/assets/script.js"></script>
+</body>
+
+</html>
